@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>hello</title>
+    <script>
+
+     // setInterval(function(){}, delay);
+     // 반복 실행됨
+
+
+  
+     var x;
+     function run(){
+      //변수=함수; 함수가 데이터기때문에 저장이 가능하다
+      //즉 함수안에 함수를 안자값으로 넣을 수 있다.
+      //setInterval(function())에서 function이 함수인데 가능하다
+       
+         x = setInterval(function(){
+           console.log("2초뒤에 매번 출력됨");
+         }, 2000);
+     }
+     function stop(){
+        clearInterval(x); //중지문
+     }
+    </script>
+  </head>
+  <body>
+    <button onclick="run()">start</button>
+    <button onclick="stop()">stop</button>
+  </body>
+</html>
