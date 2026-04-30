@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+        <script>
+        function ok(){
+            console.log("ok");
+
+        }
+
+        window.onload = init;
+
+        //이벤트 연결
+       function init(){
+        var btn = document.querySelector("#x");
+         console.log(btn);
+         //btn.onclick = ok; 
+        btn.addEventListener("click",ok); //속성으로 바꾼걸 이벤트 처리함
+       } 
+       
+         </script>
+         -
+
+</head>
+
+ <!-- 화면이 만들어지고나서 호출 하기 위해서 온로드를 사용
+  이러면 버튼을 만들고 쿼리가 들어잇는 init 함수를 시작한다
+  body 뒤에 onload를 붙이고 init 함수를 명시해 줌 -->
+  <!--onload="init()" 대신에
+  스크립트에 window.onload = init; 넣고 가능하다 이게 권장 모습--> 
+
+  <body>
+    
+    <button id ="x">ok</button>
+
+</body>
+
+
+</html>
