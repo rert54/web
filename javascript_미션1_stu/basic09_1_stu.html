@@ -6,9 +6,21 @@
 <script type="text/javascript">
 
 
-    /*
-       코드 구현   
-    */
+let n = prompt("1.면접 점수값을 입력하시오");
+let n2 = prompt("2. 영어 점수값을 입력하시오");
+let avg = (Number(n) + Number(n2)) / 2
+
+if( avg >= 80){
+    console.log("면접 점수 값: "+n);
+    console.log("영어 점수 값: "+n2);
+    console.log("평균: "+ avg );
+    console.log("합격여부:합격");
+}else{
+    console.log("면접 점수 값: "+n);
+    console.log("영어 점수 값: "+n2);
+    console.log("평균: "+ avg );
+    console.log("합격여부:불합격");
+}
 
 </script>
 </head>
